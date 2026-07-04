@@ -41,7 +41,7 @@ export function logActivity(sql, params, meta) {
   entries.push(entry);
   if (entries.length > MAX) entries.shift();
   return entry;
-}
+} 
 
 export function getActivity() {
   return [...entries].reverse();
